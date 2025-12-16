@@ -1,0 +1,48 @@
+/* Global Styles */
+body {
+  background-color: #F4F4F0;
+  color: #1A1A1A;
+}
+
+/* Custom Scrollbar for Bauhaus feel */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F4F0;
+  border-left: 2px solid #1A1A1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+  border: 2px solid #F4F4F0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E94B35;
+}
+
+/* Utility classes for hiding/showing scrollbars */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Show scrollbar on hover */
+.hover-scrollbar:hover::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+.hover-scrollbar:hover::-webkit-scrollbar-track {
+   background: #F4F4F0;
+}
+.hover-scrollbar:hover::-webkit-scrollbar-thumb {
+   background: #1A1A1A;
+   border-radius: 4px;
+}
+.hover-scrollbar:hover {
+  scrollbar-width: thin;
+}
